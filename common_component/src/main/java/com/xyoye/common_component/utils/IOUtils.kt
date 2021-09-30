@@ -207,7 +207,7 @@ object IOUtils {
     /**
      * 关闭IO流
      */
-    fun closeIO(closeable: Closeable?) {
+    fun closeIO(closeable: AutoCloseable?) {
         try {
             closeable?.close()
         } catch (e: IOException) {
